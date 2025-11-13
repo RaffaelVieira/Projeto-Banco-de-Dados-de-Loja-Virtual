@@ -1,23 +1,55 @@
 
 # Projeto – Banco de Dados de Loja Virtual (E-commerce)
 
-Este repositório contém a modelagem lógica e os scripts SQL de um banco de dados completo para um sistema de e-commerce.
+# Este projeto implementa um banco de dados completo para uma loja virtual, incluindo modelagem, normalização (1FN, 2FN, 3FN) e scripts SQL completos (DDL + DML).
 
-## Estrutura do Repositório
-- 01_create_tables.sql
-- 02_inserts.sql
-- 03_selects.sql
-- 04_updates_deletes.sql
-- README.md
+# 📌 Conteúdo do Repositório
+## /sql
+   ### ├── 01_create_tables.sql
+   ### ├── 02_inserts.sql
+   ### ├── 03_selects.sql
+   ### ├── 04_updates_deletes.sql
+## /modelagem
+  ### ├── der_revisado.png
+   ### ├── normalizacao_1fn_2fn_3fn.pdf
+# README.md
 
-## Objetivo
-Implementar e manipular dados em um banco relacional utilizando SQL, aplicando 1FN, 2FN e 3FN.
+# 🧩 Descrição do Sistema
 
-## Como Executar
-1. Execute `01_create_tables.sql`
-2. Execute `02_inserts.sql`
-3. Teste consultas com `03_selects.sql`
-4. Manipule dados com `04_updates_deletes.sql`
+# O sistema representa uma loja virtual com:
 
-## Tecnologias
-- MySQL Workbench ou PostgreSQL PGAdmin
+# Clientes
+# Endereços
+# Produtos
+# Categorias
+# Pedidos
+# Itens do Pedido
+# Pagamentos
+
+## Com relacionamentos totalmente normalizados até 3FN.
+
+# 🗄️ Tecnologias
+
+## MySQL Workbench ou PostgreSQL PGAdmin
+
+## SQL (DDL + DML)
+
+# ▶️ Como Executar
+
+## Importe 01_create_tables.sql para criar o banco.
+
+## Execute 02_inserts.sql para popular os dados.
+
+## Teste consultas com 03_selects.sql.
+
+## Manipule dados com 04_updates_deletes.sql.
+
+# 📚 Aprendizados Aplicados
+
+## Modelagem Entidade-Relacionamento
+## Normalização (1FN, 2FN, 3FN)
+## DDL (CREATE TABLE)
+## DML (INSERT, SELECT, UPDATE, DELETE)
+## Integridade referencial
+
+Versionamento via Git/GitHub
