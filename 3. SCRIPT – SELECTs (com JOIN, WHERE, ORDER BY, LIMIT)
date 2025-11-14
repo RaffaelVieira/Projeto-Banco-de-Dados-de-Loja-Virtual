@@ -1,0 +1,29 @@
+-- 1. Listar clientes e seus pedidos
+SELECT c.nome, p.id_pedido, p.status_pedido, p.valor_total
+FROM cliente c
+JOIN pedido p ON p.id_cliente = c.id_cliente;
+
+-- 2. Produtos com estoque baixo
+SELECT nome, estoque
+FROM produto
+WHERE estoque < 20
+ORDER BY estoque ASC;
+
+-- 3. Pedidos com seus itens
+SELECT p.id_pedido, pr.nome AS produto, i.quantidade, i.subtotal
+FROM pedido p
+JOIN item_pedido i ON i.id_pedido = p.id_pedido
+JOIN produto pr ON pr.id_produto = i.id_produto;
+
+-- 4. Top 2 produtos mais caros
+SELECT nome, preco
+FROM produto
+ORDER BY preco DESC
+LIMIT 2;
+
+-- 5. Clientes que pagaram via Pix
+SELECT c.nome, pa.valor_pago
+FROM pagamento pa
+JOIN pedido pe ON pa.id_pedido = pe.id_pedido
+JOIN cliente c ON c.id_cliente = pe.id_cliente
+WHERE pa.forma_pagamento = 'Pix';
