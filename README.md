@@ -3,16 +3,16 @@ Este projeto implementa um banco de dados completo para uma loja virtual, inclui
 
 # 📋 Estrutura do Projeto
 
-### 📁 ecommerce-database/
-### /sql
-   ### ├── 01_create_tables.sql
-   ### ├── 02_inserts.sql
-   ### ├── 03_selects.sql
-   ### ├── 04_updates_deletes.sql
-### /modelagem
-   ### ├── der_revisado.png
-   ### ├── normalizacao_1fn_2fn_3fn.pdf
-### README.md
+#### 📁 ecommerce-database/
+#### /sql
+   #### ├── 01_create_tables.sql
+   #### ├── 02_inserts.sql
+   #### ├── 03_selects.sql
+   #### ├── 04_updates_deletes.sql
+#### /modelagem
+   #### ├── der_revisado.png
+   #### ├── normalizacao_1fn_2fn_3fn.pdf
+#### README.md
 
 # 🗄️ Modelo do Banco de Dados
 Tabelas Principais:
