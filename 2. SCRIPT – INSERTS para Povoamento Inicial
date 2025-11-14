@@ -1,0 +1,43 @@
+-- CLIENTES
+INSERT INTO cliente (nome, email, cpf, telefone, data_nascimento)
+VALUES
+('João Silva', 'joao@email.com', '123.456.789-00', '11988887777', '1990-05-21'),
+('Maria Santos', 'maria@email.com', '987.654.321-00', '11999996655', '1985-09-15');
+
+-- ENDEREÇOS
+INSERT INTO endereco (id_cliente, rua, numero, cidade, estado, cep)
+VALUES
+(1, 'Rua Central', '100', 'São Paulo', 'SP', '01000-000'),
+(2, 'Av Paulista', '1500', 'São Paulo', 'SP', '01310-000');
+
+-- CATEGORIAS
+INSERT INTO categoria (nome)
+VALUES ('Eletrônicos'), ('Livros'), ('Roupas');
+
+-- PRODUTOS
+INSERT INTO produto (nome, descricao, preco, estoque, id_categoria)
+VALUES
+('Notebook Lenovo', 'Notebook i5 8GB RAM', 3500.00, 10, 1),
+('Smartphone Samsung', 'Modelo Galaxy S22', 5000.00, 15, 1),
+('Camisa Polo', 'Camisa algodão', 89.90, 50, 3),
+('Livro SQL', 'Apostila completa', 49.90, 100, 2);
+
+-- PEDIDOS
+INSERT INTO pedido (id_cliente, id_endereco, status_pedido, valor_total)
+VALUES
+(1, 1, 'Processando', 3549.90),
+(2, 2, 'Concluído', 5089.90);
+
+-- ITENS DO PEDIDO
+INSERT INTO item_pedido (id_pedido, id_produto, quantidade, preco_unitario, subtotal)
+VALUES
+(1, 1, 1, 3500.00, 3500.00),
+(1, 4, 1, 49.90, 49.90),
+(2, 2, 1, 5000.00, 5000.00),
+(2, 3, 1, 89.90, 89.90);
+
+-- PAGAMENTOS
+INSERT INTO pagamento (id_pedido, forma_pagamento, valor_pago)
+VALUES
+(1, 'Cartão de Crédito', 3549.90),
+(2, 'Pix', 5089.90);
