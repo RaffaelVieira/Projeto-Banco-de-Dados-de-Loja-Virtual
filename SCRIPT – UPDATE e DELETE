@@ -1,0 +1,28 @@
+UPDATE (3 exemplos)
+-- Atualizar status de pedido
+UPDATE pedido 
+SET status_pedido = 'Enviado'
+WHERE id_pedido = 1;
+
+-- Atualizar estoque após venda
+UPDATE produto
+SET estoque = estoque - 1
+WHERE id_produto = 1;
+
+-- Corrigir nome de categoria
+UPDATE categoria
+SET nome = 'Eletrônicos e Informática'
+WHERE id_categoria = 1;
+
+DELETE (3 exemplos)
+-- Apagar item de pedido específico
+DELETE FROM item_pedido
+WHERE id_item = 4;
+
+-- Excluir produto sem vendas
+DELETE FROM produto
+WHERE id_produto NOT IN (SELECT id_produto FROM item_pedido);
+
+-- Remover um endereço incorreto
+DELETE FROM endereco
+WHERE id_endereco = 2;
