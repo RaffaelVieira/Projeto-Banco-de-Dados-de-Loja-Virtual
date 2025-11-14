@@ -1,7 +1,7 @@
-# 🛒 Projeto de Banco de Dados para E-commerce
+## 🛒 Projeto de Banco de Dados para E-commerce
 Este projeto implementa um banco de dados completo para uma loja virtual, incluindo modelagem, normalização (1FN, 2FN, 3FN) e scripts SQL completos (DDL + DML).
 
-# 📋 Estrutura do Projeto
+## 📋 Estrutura do Projeto
 
 #### 📁 ecommerce-database/
 #### /sql
@@ -14,7 +14,7 @@ Este projeto implementa um banco de dados completo para uma loja virtual, inclui
    #### ├── normalizacao_1fn_2fn_3fn.pdf
 #### README.md
 
-# 🗄️ Modelo do Banco de Dados
+## 🗄️ Modelo do Banco de Dados
 Tabelas Principais:
 Clientes - Informações dos clientes
 
@@ -28,7 +28,7 @@ Itens_Pedido - Itens de cada pedido
 
 Pagamentos - Informações de pagamento
 
-# 🚀 Como Executar
+## 🚀 Como Executar
 Pré-requisitos:
 MySQL Server 8.0+ ou PostgreSQL 12+
 
@@ -51,7 +51,7 @@ SOURCE select_queries.sql;
 -- 4. Execute operações de atualização
 SOURCE update_delete_operations.sql;
 
-# 📊 Funcionalidades
+## 📊 Funcionalidades
 ✅ Scripts Incluídos:
 create_database.sql - Criação do banco e todas as tabelas
 
@@ -61,7 +61,7 @@ select_queries.sql - 5 consultas complexas com JOIN, WHERE, ORDER BY
 
 update_delete_operations.sql - 5 UPDATEs e 5 DELETEs com condições
 
-# 🔍 Exemplos de Consultas:
+## 🔍 Exemplos de Consultas:
 Produtos por categoria com estoque
 
 Pedidos com informações do cliente
@@ -72,7 +72,7 @@ Clientes com maior valor em compras
 
 Produtos com estoque baixo
 
-# 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 SQL (DML - Data Manipulation Language)
 
 MySQL/PostgreSQL
@@ -81,7 +81,7 @@ Git para versionamento
 
 Workbench/pgAdmin para desenvolvimento
 
-# 📈 Conceitos Aplicados
+## 📈 Conceitos Aplicados
 Modelagem relacional
 
 Normalização de dados
