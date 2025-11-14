@@ -1,55 +1,97 @@
+# 🛒 Projeto de Banco de Dados para E-commerce
+Este projeto implementa um banco de dados completo para uma loja virtual, incluindo modelagem, normalização (1FN, 2FN, 3FN) e scripts SQL completos (DDL + DML).
 
-# Projeto – Banco de Dados de Loja Virtual (E-commerce)
+# 📋 Estrutura do Projeto
 
-# Este projeto implementa um banco de dados completo para uma loja virtual, incluindo modelagem, normalização (1FN, 2FN, 3FN) e scripts SQL completos (DDL + DML).
-
-# 📌 Conteúdo do Repositório
-## /sql
+### 📁 ecommerce-database/
+### /sql
    ### ├── 01_create_tables.sql
    ### ├── 02_inserts.sql
    ### ├── 03_selects.sql
    ### ├── 04_updates_deletes.sql
-## /modelagem
-  ### ├── der_revisado.png
+### /modelagem
+   ### ├── der_revisado.png
    ### ├── normalizacao_1fn_2fn_3fn.pdf
-# README.md
+### README.md
 
-# 🧩 Descrição do Sistema
+# 🗄️ Modelo do Banco de Dados
+Tabelas Principais:
+Clientes - Informações dos clientes
 
-# O sistema representa uma loja virtual com:
+Produtos - Catálogo de produtos
 
-# Clientes
-# Endereços
-# Produtos
-# Categorias
-# Pedidos
-# Itens do Pedido
-# Pagamentos
+Categorias - Categorias de produtos
 
-## Com relacionamentos totalmente normalizados até 3FN.
+Pedidos - Registro de pedidos
 
-# 🗄️ Tecnologias
+Itens_Pedido - Itens de cada pedido
 
-## MySQL Workbench ou PostgreSQL PGAdmin
+Pagamentos - Informações de pagamento
 
-## SQL (DDL + DML)
+# 🚀 Como Executar
+Pré-requisitos:
+MySQL Server 8.0+ ou PostgreSQL 12+
 
-# ▶️ Como Executar
+MySQL Workbench ou pgAdmin 4
 
-## Importe 01_create_tables.sql para criar o banco.
+Git (para versionamento)
 
-## Execute 02_inserts.sql para popular os dados.
+Execute os scripts em ordem:
 
-## Teste consultas com 03_selects.sql.
+sql
+-- 1. Criação do banco e tabelas
+SOURCE create_database.sql;
 
-## Manipule dados com 04_updates_deletes.sql.
+-- 2. Inserção de dados
+SOURCE insert_data.sql;
 
-# 📚 Aprendizados Aplicados
+-- 3. Teste as consultas
+SOURCE select_queries.sql;
 
-## Modelagem Entidade-Relacionamento
-## Normalização (1FN, 2FN, 3FN)
-## DDL (CREATE TABLE)
-## DML (INSERT, SELECT, UPDATE, DELETE)
-## Integridade referencial
+-- 4. Execute operações de atualização
+SOURCE update_delete_operations.sql;
 
-Versionamento via Git/GitHub
+# 📊 Funcionalidades
+✅ Scripts Incluídos:
+create_database.sql - Criação do banco e todas as tabelas
+
+insert_data.sql - Dados de exemplo para teste
+
+select_queries.sql - 5 consultas complexas com JOIN, WHERE, ORDER BY
+
+update_delete_operations.sql - 5 UPDATEs e 5 DELETEs com condições
+
+# 🔍 Exemplos de Consultas:
+Produtos por categoria com estoque
+
+Pedidos com informações do cliente
+
+Itens mais vendidos
+
+Clientes com maior valor em compras
+
+Produtos com estoque baixo
+
+# 🛠️ Tecnologias Utilizadas
+SQL (DML - Data Manipulation Language)
+
+MySQL/PostgreSQL
+
+Git para versionamento
+
+Workbench/pgAdmin para desenvolvimento
+
+# 📈 Conceitos Aplicados
+Modelagem relacional
+
+Normalização de dados
+
+Integridade referencial
+
+Consultas complexas
+
+Transações SQL
+
+Otimização de performance
+
+
